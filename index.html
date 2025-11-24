@@ -1,212 +1,78 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Data Analytics Portfolio — Your Name</title>
-  <meta name="description" content="Data analytics portfolio — projects, dashboards, and case studies." />
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Junior Data Analyst</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-row">
-      <a class="brand" href="#">YourName</a>
-
-      <nav class="nav" id="nav">
-        <a href="#projects">Projects</a>
-        <a href="#dashboards">Dashboards</a>
-        <a href="#skills">Skills</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a class="btn" href="/resume.pdf" download>Resume</a>
-      </nav>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
-        <span class="hamburger"></span>
-      </button>
-    </div>
+  <header class="header">
+    <h1>Aya – Junior Data Analyst</h1>
+    <nav>
+      <a href="#about">À propos</a>
+      <a href="#projects">Projets</a>
+      <a href="#skills">Compétences</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero container">
-      <div class="hero-left">
-        <h1>Hi — I'm Your Name</h1>
-        <p class="lead">I build data products, dashboards and models that help teams make better decisions. I work with SQL, Python, and modern viz tools.</p>
+  <section class="hero">
+    <h2>Analyse de données • Visualisation • Résolution de problèmes</h2>
+    <p>Je transforme les données en insights utiles pour prendre de meilleures décisions.</p>
+    <a href="#projects" class="btn">Voir mes projets</a>
+  </section>
 
-        <div class="kpis">
-          <div class="kpi"><div class="kpi-value">18</div><div class="kpi-label">Projects</div></div>
-          <div class="kpi"><div class="kpi-value">2M+</div><div class="kpi-label">Rows analyzed</div></div>
-          <div class="kpi"><div class="kpi-value">5</div><div class="kpi-label">Dashboards</div></div>
-        </div>
+  <section id="about" class="section">
+    <h2>À propos</h2>
+    <p>
+      Diplômée en économie, passionnée par les données. J'utilise Python, SQL et des outils de visualisation pour explorer,
+      nettoyer et analyser des données afin d'aider les équipes à comprendre les tendances et à optimiser leurs performances.
+    </p>
+  </section>
 
-        <div class="hero-actions">
-          <a class="btn primary" href="#projects">View projects</a>
-          <a class="btn ghost" href="#contact">Get in touch</a>
-        </div>
+  <section id="projects" class="section">
+    <h2>Mes projets</h2>
+    <div class="projects-grid">
+      <!-- Exemple de carte projet -->
+      <div class="project-card">
+        <h3>Analyse des ventes</h3>
+        <p>Dashboard interactif avec KPIs et tendances pour la direction.</p>
+        <a href="LIEN_LINKEDIN_1" target="_blank" class="project-link">Voir le projet</a>
       </div>
 
-      <div class="hero-right" aria-hidden="true">
-        <!-- dashboard preview / placeholder -->
-        <div class="dashboard-preview">
-          <svg viewBox="0 0 300 180" class="preview-svg" role="img" focusable="false" aria-hidden="true">
-            <rect width="300" height="180" rx="8" fill="#f3f7fb"/>
-            <g transform="translate(12,12)">
-              <rect x="0" y="0" width="176" height="100" rx="6" fill="#ffffff"/>
-              <rect x="188" y="0" width="100" height="40" rx="6" fill="#eef6ff"/>
-              <rect x="188" y="52" width="100" height="40" rx="6" fill="#eef7f1"/>
-            </g>
-          </svg>
-        </div>
+      <div class="project-card">
+        <h3>Pipeline nettoyage data</h3>
+        <p>Automatisation du nettoyage et transformation de fichiers CSV.</p>
+        <a href="LIEN_LINKEDIN_2" target="_blank" class="project-link">Voir le projet</a>
       </div>
-    </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section container">
-      <h2 class="section-title">Selected projects</h2>
-
-      <div class="projects-grid">
-        <!-- card -->
-        <article class="card">
-          <div class="card-media"><div class="thumb">Forecasting</div></div>
-          <div class="card-body">
-            <h3 class="card-title">Sales Forecasting</h3>
-            <p class="card-excerpt">Built weekly demand forecasts using Prophet + XGBoost and exposed predictions in a dashboard for planners.</p>
-            <p class="tags"><span class="tag">Python</span><span class="tag">Prophet</span><span class="tag">Tableau</span></p>
-            <div class="card-actions">
-              <a class="btn small" href="#">Case study</a>
-              <a class="btn small outline" href="#">Code</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-media"><div class="thumb">ETL</div></div>
-          <div class="card-body">
-            <h3 class="card-title">Customer Churn</h3>
-            <p class="card-excerpt">Feature engineering and survival analysis that reduced churn by prioritizing high-risk cohorts.</p>
-            <p class="tags"><span class="tag">SQL</span><span class="tag">Pandas</span><span class="tag">Looker</span></p>
-            <div class="card-actions">
-              <a class="btn small" href="#">Case study</a>
-              <a class="btn small outline" href="#">Code</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-media"><div class="thumb">NLP</div></div>
-          <div class="card-body">
-            <h3 class="card-title">Sentiment Pipeline</h3>
-            <p class="card-excerpt">Automated ingestion, classification and trend reporting for product reviews with API endpoints for scoring.</p>
-            <p class="tags"><span class="tag">NLP</span><span class="tag">FastAPI</span><span class="tag">Docker</span></p>
-            <div class="card-actions">
-              <a class="btn small" href="#">Case study</a>
-              <a class="btn small outline" href="#">Code</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- DASHBOARDS / INSIGHTS -->
-    <section id="dashboards" class="section bg-surface">
-      <div class="container">
-        <h2 class="section-title">Dashboards & insights</h2>
-        <div class="insights-grid">
-          <div class="insight-card">
-            <h4>Monthly Active Users</h4>
-            <!-- Replace with your Chart.js / D3 canvas -->
-            <canvas id="chart-mau" width="600" height="240"></canvas>
-            <div class="chart-note">Connect a chart library to #chart-mau</div>
-          </div>
-
-          <div class="insight-card">
-            <h4>Revenue by Channel</h4>
-            <canvas id="chart-rev" width="600" height="240"></canvas>
-            <div class="chart-note">Connect a chart library to #chart-rev</div>
-          </div>
-
-          <aside class="insight-stats">
-            <div class="stat"><div class="stat-value">+9.2%</div><div class="stat-label">MoM revenue</div></div>
-            <div class="stat"><div class="stat-value">412</div><div class="stat-label">Active dashboards</div></div>
-            <div class="stat"><div class="stat-value">99.9%</div><div class="stat-label">ETL uptime</div></div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS / ABOUT -->
-    <section id="skills" class="section container">
-      <h2 class="section-title">Skills</h2>
-      <ul class="skills-grid">
-        <li>Python (pandas, numpy, scikit-learn)</li>
-        <li>SQL (Postgres, BigQuery)</li>
-        <li>Visualization (Tableau, Looker, D3)</li>
-        <li>APIs & Deployment (FastAPI, Docker)</li>
-        <li>Time series & Forecasting</li>
-        <li>A/B testing & experimentation</li>
-      </ul>
-      <div id="about" class="about">
-        <h3>About me</h3>
-        <p>I help teams turn raw data into decisions — from data cleaning and ETL to modeling and dashboarding. Open to contract and full-time roles.</p>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section container">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-grid">
-        <form class="contact-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Replace with a real endpoint');">
-          <label>
-            <span>Name</span>
-            <input type="text" name="name" required />
-          </label>
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" required />
-          </label>
-          <label>
-            <span>Message</span>
-            <textarea name="message" rows="5" required></textarea>
-          </label>
-          <button class="btn primary" type="submit">Send message</button>
-        </form>
-
-        <div class="contact-info">
-          <h3>Let's connect</h3>
-          <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-          <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
-          <p>GitHub: <a href="#">github.com/yourhandle</a></p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <div>© <span id="year"></span> Your Name</div>
-      <div class="footer-links">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+      <div class="project-card">
+        <h3>Machine Learning – Churn</h3>
+        <p>Modèle simple avec métriques et rapport d'interprétation.</p>
+        <a href="LIEN_LINKEDIN_3" target="_blank" class="project-link">Voir le projet</a>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    // basic UI helpers
-    document.getElementById('year').textContent = new Date().getFullYear();
+  <section id="skills" class="section">
+    <h2>Compétences</h2>
+    <ul class="skills-list">
+      <li>Python (Pandas, NumPy)</li>
+      <li>SQL</li>
+      <li>Power BI • Plotly • Matplotlib</li>
+      <li>Data Cleaning</li>
+      <li>Machine Learning (bases)</li>
+      <li>Excel avancé</li>
+    </ul>
+  </section>
 
-    const nav = document.getElementById('nav');
-    const navToggle = document.getElementById('navToggle');
-    navToggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      navToggle.classList.toggle('open');
-    });
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:exemple@email.com">exemple@email.com</a></p>
+    <p>GitHub : <a href="https://github.com/username" target="_blank">github.com/username</a></p>
+  </section>
 
-    // Placeholder: sample data injection (optional)
-    // To visualize charts, include Chart.js and initialize canvases #chart-mau and #chart-rev.
-  </script>
+  <footer class="footer">© 2025 – Portfolio Aya | Junior Data Analyst</footer>
 </body>
 </html>

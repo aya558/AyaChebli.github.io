@@ -1,1 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Data Analytics Portfolio — Your Name</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfolio showcasing data analytics projects, dashboards, and case studies." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">YourName</a>
 
+      <nav class="nav" id="nav">
+        <a href="#projects">Projects</a>
+        <a href="#insights">Insights</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn outline" href="/resume.pdf" download>Resume</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Hi, I'm Your Name — Data Analyst</h1>
+          <p class="lead">
+            I turn raw data into actionable insights. I build dashboards, perform statistical analysis, and craft end-to-end analytics solutions using Python, SQL, and visualization tools.
+          </p>
+
+          <div class="kpis">
+            <div class="kpi">
+              <div class="kpi-value">24</div>
+              <div class="kpi-label">Projects</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi-value">3M+</div>
+              <div class="kpi-label">Records Processed</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi-value">Chart-Ready</div>
+              <div class="kpi-label">Dashboards</div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="hero-preview" aria-hidden="true">
+          <!-- Simple SVG placeholder for a dashboard preview -->
+          <svg viewBox="0 0 600 400" class="preview-svg" role="img" focusable="false" aria-hidden="true">
+            <rect width="600" height="400" rx="12" fill="#0f1724"/>
+            <g transform="translate(28,28)" fill="none">
+              <rect x="0" y="0" width="420" height="224" rx="8" fill="#0b1220"/>
+              <rect x="440" y="0" width="112" height="60" rx="6" fill="#071122"/>
+              <rect x="440" y="76" width="112" height="60" rx="6" fill="#071722"/>
+              <rect x="440" y="152" width="112" height="100" rx="6" fill="#061821"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2 class="section-title">Selected Projects</h2>
+
+      <div class="filters" role="tablist" aria-label="Project filters">
+        <button class="chip active">All</button>
+        <button class="chip">Dashboard</button>
+        <button class="chip">Time Series</button>
+        <button class="chip">NLP</button>
+        <button class="chip">SQL</button>
+      </div>
+
+      <div class="projects-grid" aria-live="polite">
+        <!-- Project card -->
+        <article class="card project">
+          <div class="project-media">
+            <svg class="project-thumb" viewBox="0 0 320 180" role="img" aria-label="Project thumbnail">
+              <rect width="320" height="180" rx="8" fill="#e6eef8"/>
+              <g fill="#c7dbf6">
+                <rect x="20" y="38" width="80" height="80" rx="6"/>
+                <rect x="110" y="24" width="180" height="24" rx="4"/>
+                <rect x="110" y="60" width="140" height="14" rx="4"/>
+                <rect x="110" y="84" width="80" height="14" rx="4"/>
+              </g>
+            </svg>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Sales Forecasting Dashboard</h3>
+            <p class="card-excerpt">ARIMA and Prophet models integrated into an interactive dashboard to predict weekly demand and plan inventory.</p>
+            <p class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Prophet</span>
+              <span class="tag">Looker</span>
+            </p>
+            <div class="card-actions">
+              <a class="btn small" href="#">Case study</a>
+              <a class="btn small outline" href="#">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Duplicate cards for layout demo -->
+        <article class="card project">
+          <div class="project-media">
+            <div class="project-thumb placeholder">CSV → SQL → Viz</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Customer Churn Analysis</h3>
+            <p class="card-excerpt">Feature engineering, survival analysis, and a deployable scoring pipeline to reduce churn by 12%.</p>
+            <p class="tags">
+              <span class="tag">SQL</span>
+              <span class="tag">Python</span>
+              <span class="tag">Tableau</span>
+            </p>
+            <div class="card-actions">
+              <a class="btn small" href="#">Case study</a>
+              <a class="btn small outline" href="#">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project-media">
+            <div class="project-thumb placeholder">NLP</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Sentiment Pipeline for Reviews</h3>
+            <p class="card-excerpt">End-to-end pipeline for ingesting user reviews, performing sentiment classification, and surfacing trends.</p>
+            <p class="tags">
+              <span class="tag">NLP</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Docker</span>
+            </p>
+            <div class="card-actions">
+              <a class="btn small" href="#">Case study</a>
+              <a class="btn small outline" href="#">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="insights" class="section bg-muted">
+      <div class="container">
+        <h2 class="section-title">Insights & Dashboards</h2>
+        <div class="insights-grid">
+          <div class="insight-card">
+            <h4>Monthly Active Users</h4>
+            <div class="chart" id="chart-1">
+              <!-- Placeholder canvas: replace with Chart.js / D3 -->
+              <canvas id="canvas-1" width="400" height="160"></canvas>
+              <div class="chart-hint">Connect a chart library to #canvas-1</div>
+            </div>
+          </div>
+
+          <div class="insight-card">
+            <h4>Revenue by Channel</h4>
+            <div class="chart" id="chart-2">
+              <canvas id="canvas-2" width="400" height="160"></canvas>
+              <div class="chart-hint">Connect a chart library to #canvas-2</div>
+            </div>
+          </div>
+
+          <div class="insight-metrics">
+            <div class="metric">
+              <div class="metric-value">+8.6%</div>
+              <div class="metric-label">MoM Revenue</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">425</div>
+              <div class="metric-label">Active Dashboards</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">SLA 99.95%</div>
+              <div class="metric-label">ETL Uptime</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div>
+          <p>I am a data analyst with experience in building production analytics, automating ETL, and designing dashboards that help stakeholders make data-driven decisions.</p>
+
+          <ul class="skills">
+            <li>Python (pandas, scikit-learn)</li>
+            <li>SQL (Postgres, Redshift)</li>
+            <li>Visualization (Tableau, Looker, D3)</li>
+            <li>Deployment (Docker, FastAPI)</li>
+          </ul>
+
+          <p><strong>Interested in collaborating?</strong> I’m available for consulting engagements and open to full-time roles.</p>
+        </div>
+
+        <div class="resume-card">
+          <h3>Experience Snapshot</h3>
+          <ol>
+            <li><strong>Data Analyst</strong> — Company A (2022–Present)</li>
+            <li><strong>Business Intelligence</strong> — Company B (2019–2022)</li>
+            <li><strong>Research Assistant</strong> — University (2017–2019)</li>
+          </ol>
+          <a class="btn" href="/resume.pdf" download>Download resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <form class="contact-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Replace with a real endpoint');">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send message</button>
+        </form>
+
+        <div class="contact-info">
+          <h3>Let's connect</h3>
+          <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+          <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+          <p>GitHub: <a href="#">github.com/yourhandle</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Your Name — Data Analytics</div>
+      <div class="footer-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Small UI helpers: nav toggle and year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const nav = document.getElementById('nav');
+    const navToggle = document.getElementById('navToggle');
+    navToggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      navToggle.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

@@ -3,109 +3,77 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Data Analytics Portfolio — Chebli aya</title>
+  <title>Data Analytics Portfolio — Your Name</title>
+  <meta name="description" content="Data analytics portfolio — projects, dashboards, and case studies." />
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <meta name="description" content="Portfolio showcasing data analytics projects, dashboards, and case studies." />
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#">aya</a>
+    <div class="container header-row">
+      <a class="brand" href="#">YourName</a>
 
       <nav class="nav" id="nav">
         <a href="#projects">Projects</a>
-        <a href="#insights">Insights</a>
+        <a href="#dashboards">Dashboards</a>
+        <a href="#skills">Skills</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a class="btn outline" href="/resume.pdf" download>Resume</a>
+        <a class="btn" href="/resume.pdf" download>Resume</a>
       </nav>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
         <span class="hamburger"></span>
       </button>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <h1>Hi, I'm aya — Junior Data Analyst</h1>
-          <p class="lead">
-            Je suis diplômée en économie, passionnée par l’analyse et la visualisation de données. J’ai développé plusieurs projets en Excel, Power BI et SQL, dans lesquels je transforme des données brutes en informations exploitables pour le contrôle de gestion et le pilotage de performance.
-Je suis motivée, rigoureuse et toujours prête à apprendre de nouveaux outils pour améliorer mes analyses.
-          </p>
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-left">
+        <h1>Hi — I'm Your Name</h1>
+        <p class="lead">I build data products, dashboards and models that help teams make better decisions. I work with SQL, Python, and modern viz tools.</p>
 
-          <div class="kpis">
-            <div class="kpi">
-              <div class="kpi-value">24</div>
-              <div class="kpi-label">Projects</div>
-            </div>
-            <div class="kpi">
-              <div class="kpi-value">3M+</div>
-              <div class="kpi-label">Records Processed</div>
-            </div>
-            <div class="kpi">
-              <div class="kpi-value">Chart-Ready</div>
-              <div class="kpi-label">Dashboards</div>
-            </div>
-          </div>
-
-          <div class="hero-actions">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn ghost" href="#contact">Get in touch</a>
-          </div>
+        <div class="kpis">
+          <div class="kpi"><div class="kpi-value">18</div><div class="kpi-label">Projects</div></div>
+          <div class="kpi"><div class="kpi-value">2M+</div><div class="kpi-label">Rows analyzed</div></div>
+          <div class="kpi"><div class="kpi-value">5</div><div class="kpi-label">Dashboards</div></div>
         </div>
 
-        <div class="hero-preview" aria-hidden="true">
-          <!-- Simple SVG placeholder for a dashboard preview -->
-          <svg viewBox="0 0 600 400" class="preview-svg" role="img" focusable="false" aria-hidden="true">
-            <rect width="600" height="400" rx="12" fill="#0f1724"/>
-            <g transform="translate(28,28)" fill="none">
-              <rect x="0" y="0" width="420" height="224" rx="8" fill="#0b1220"/>
-              <rect x="440" y="0" width="112" height="60" rx="6" fill="#071122"/>
-              <rect x="440" y="76" width="112" height="60" rx="6" fill="#071722"/>
-              <rect x="440" y="152" width="112" height="100" rx="6" fill="#061821"/>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-right" aria-hidden="true">
+        <!-- dashboard preview / placeholder -->
+        <div class="dashboard-preview">
+          <svg viewBox="0 0 300 180" class="preview-svg" role="img" focusable="false" aria-hidden="true">
+            <rect width="300" height="180" rx="8" fill="#f3f7fb"/>
+            <g transform="translate(12,12)">
+              <rect x="0" y="0" width="176" height="100" rx="6" fill="#ffffff"/>
+              <rect x="188" y="0" width="100" height="40" rx="6" fill="#eef6ff"/>
+              <rect x="188" y="52" width="100" height="40" rx="6" fill="#eef7f1"/>
             </g>
           </svg>
         </div>
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects" class="section container">
-      <h2 class="section-title">Selected Projects</h2>
+      <h2 class="section-title">Selected projects</h2>
 
-      <div class="filters" role="tablist" aria-label="Project filters">
-        <button class="chip active">All</button>
-        <button class="chip">Dashboard</button>
-        <button class="chip">Time Series</button>
-        <button class="chip">NLP</button>
-        <button class="chip">SQL</button>
-      </div>
-
-      <div class="projects-grid" aria-live="polite">
-        <!-- Project card -->
-        <article class="card project">
-          <div class="project-media">
-            <svg class="project-thumb" viewBox="0 0 320 180" role="img" aria-label="Project thumbnail">
-              <rect width="320" height="180" rx="8" fill="#e6eef8"/>
-              <g fill="#c7dbf6">
-                <rect x="20" y="38" width="80" height="80" rx="6"/>
-                <rect x="110" y="24" width="180" height="24" rx="4"/>
-                <rect x="110" y="60" width="140" height="14" rx="4"/>
-                <rect x="110" y="84" width="80" height="14" rx="4"/>
-              </g>
-            </svg>
-          </div>
+      <div class="projects-grid">
+        <!-- card -->
+        <article class="card">
+          <div class="card-media"><div class="thumb">Forecasting</div></div>
           <div class="card-body">
-            <h3 class="card-title">Sales Forecasting Dashboard</h3>
-            <p class="card-excerpt">ARIMA and Prophet models integrated into an interactive dashboard to predict weekly demand and plan inventory.</p>
-            <p class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">Prophet</span>
-              <span class="tag">Looker</span>
-            </p>
+            <h3 class="card-title">Sales Forecasting</h3>
+            <p class="card-excerpt">Built weekly demand forecasts using Prophet + XGBoost and exposed predictions in a dashboard for planners.</p>
+            <p class="tags"><span class="tag">Python</span><span class="tag">Prophet</span><span class="tag">Tableau</span></p>
             <div class="card-actions">
               <a class="btn small" href="#">Case study</a>
               <a class="btn small outline" href="#">Code</a>
@@ -113,19 +81,12 @@ Je suis motivée, rigoureuse et toujours prête à apprendre de nouveaux outils 
           </div>
         </article>
 
-        <!-- Duplicate cards for layout demo -->
-        <article class="card project">
-          <div class="project-media">
-            <div class="project-thumb placeholder">CSV → SQL → Viz</div>
-          </div>
+        <article class="card">
+          <div class="card-media"><div class="thumb">ETL</div></div>
           <div class="card-body">
-            <h3 class="card-title">Customer Churn Analysis</h3>
-            <p class="card-excerpt">Feature engineering, survival analysis, and a deployable scoring pipeline to reduce churn by 12%.</p>
-            <p class="tags">
-              <span class="tag">SQL</span>
-              <span class="tag">Python</span>
-              <span class="tag">Tableau</span>
-            </p>
+            <h3 class="card-title">Customer Churn</h3>
+            <p class="card-excerpt">Feature engineering and survival analysis that reduced churn by prioritizing high-risk cohorts.</p>
+            <p class="tags"><span class="tag">SQL</span><span class="tag">Pandas</span><span class="tag">Looker</span></p>
             <div class="card-actions">
               <a class="btn small" href="#">Case study</a>
               <a class="btn small outline" href="#">Code</a>
@@ -133,18 +94,12 @@ Je suis motivée, rigoureuse et toujours prête à apprendre de nouveaux outils 
           </div>
         </article>
 
-        <article class="card project">
-          <div class="project-media">
-            <div class="project-thumb placeholder">NLP</div>
-          </div>
+        <article class="card">
+          <div class="card-media"><div class="thumb">NLP</div></div>
           <div class="card-body">
-            <h3 class="card-title">Sentiment Pipeline for Reviews</h3>
-            <p class="card-excerpt">End-to-end pipeline for ingesting user reviews, performing sentiment classification, and surfacing trends.</p>
-            <p class="tags">
-              <span class="tag">NLP</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">Docker</span>
-            </p>
+            <h3 class="card-title">Sentiment Pipeline</h3>
+            <p class="card-excerpt">Automated ingestion, classification and trend reporting for product reviews with API endpoints for scoring.</p>
+            <p class="tags"><span class="tag">NLP</span><span class="tag">FastAPI</span><span class="tag">Docker</span></p>
             <div class="card-actions">
               <a class="btn small" href="#">Case study</a>
               <a class="btn small outline" href="#">Code</a>
@@ -154,73 +109,51 @@ Je suis motivée, rigoureuse et toujours prête à apprendre de nouveaux outils 
       </div>
     </section>
 
-    <section id="insights" class="section bg-muted">
+    <!-- DASHBOARDS / INSIGHTS -->
+    <section id="dashboards" class="section bg-surface">
       <div class="container">
-        <h2 class="section-title">Insights & Dashboards</h2>
+        <h2 class="section-title">Dashboards & insights</h2>
         <div class="insights-grid">
           <div class="insight-card">
             <h4>Monthly Active Users</h4>
-            <div class="chart" id="chart-1">
-              <!-- Placeholder canvas: replace with Chart.js / D3 -->
-              <canvas id="canvas-1" width="400" height="160"></canvas>
-              <div class="chart-hint">Connect a chart library to #canvas-1</div>
-            </div>
+            <!-- Replace with your Chart.js / D3 canvas -->
+            <canvas id="chart-mau" width="600" height="240"></canvas>
+            <div class="chart-note">Connect a chart library to #chart-mau</div>
           </div>
 
           <div class="insight-card">
             <h4>Revenue by Channel</h4>
-            <div class="chart" id="chart-2">
-              <canvas id="canvas-2" width="400" height="160"></canvas>
-              <div class="chart-hint">Connect a chart library to #canvas-2</div>
-            </div>
+            <canvas id="chart-rev" width="600" height="240"></canvas>
+            <div class="chart-note">Connect a chart library to #chart-rev</div>
           </div>
 
-          <div class="insight-metrics">
-            <div class="metric">
-              <div class="metric-value">+8.6%</div>
-              <div class="metric-label">MoM Revenue</div>
-            </div>
-            <div class="metric">
-              <div class="metric-value">425</div>
-              <div class="metric-label">Active Dashboards</div>
-            </div>
-            <div class="metric">
-              <div class="metric-value">SLA 99.95%</div>
-              <div class="metric-label">ETL Uptime</div>
-            </div>
-          </div>
+          <aside class="insight-stats">
+            <div class="stat"><div class="stat-value">+9.2%</div><div class="stat-label">MoM revenue</div></div>
+            <div class="stat"><div class="stat-value">412</div><div class="stat-label">Active dashboards</div></div>
+            <div class="stat"><div class="stat-value">99.9%</div><div class="stat-label">ETL uptime</div></div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-grid">
-        <div>
-          <p>I am a data analyst with experience in building production analytics, automating ETL, and designing dashboards that help stakeholders make data-driven decisions.</p>
-
-          <ul class="skills">
-            <li>Python (pandas, scikit-learn)</li>
-            <li>SQL (Postgres, Redshift)</li>
-            <li>Visualization (Tableau, Looker, D3)</li>
-            <li>Deployment (Docker, FastAPI)</li>
-          </ul>
-
-          <p><strong>Interested in collaborating?</strong> I’m available for consulting engagements and open to full-time roles.</p>
-        </div>
-
-        <div class="resume-card">
-          <h3>Experience Snapshot</h3>
-          <ol>
-            <li><strong>Data Analyst</strong> — Company A (2022–Present)</li>
-            <li><strong>Business Intelligence</strong> — Company B (2019–2022)</li>
-            <li><strong>Research Assistant</strong> — University (2017–2019)</li>
-          </ol>
-          <a class="btn" href="/resume.pdf" download>Download resume</a>
-        </div>
+    <!-- SKILLS / ABOUT -->
+    <section id="skills" class="section container">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills-grid">
+        <li>Python (pandas, numpy, scikit-learn)</li>
+        <li>SQL (Postgres, BigQuery)</li>
+        <li>Visualization (Tableau, Looker, D3)</li>
+        <li>APIs & Deployment (FastAPI, Docker)</li>
+        <li>Time series & Forecasting</li>
+        <li>A/B testing & experimentation</li>
+      </ul>
+      <div id="about" class="about">
+        <h3>About me</h3>
+        <p>I help teams turn raw data into decisions — from data cleaning and ETL to modeling and dashboarding. Open to contract and full-time roles.</p>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="section container">
       <h2 class="section-title">Contact</h2>
       <div class="contact-grid">
@@ -251,8 +184,8 @@ Je suis motivée, rigoureuse et toujours prête à apprendre de nouveaux outils 
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> Your Name — Data Analytics</div>
+    <div class="container footer-row">
+      <div>© <span id="year"></span> Your Name</div>
       <div class="footer-links">
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
@@ -262,7 +195,7 @@ Je suis motivée, rigoureuse et toujours prête à apprendre de nouveaux outils 
   </footer>
 
   <script>
-    // Small UI helpers: nav toggle and year
+    // basic UI helpers
     document.getElementById('year').textContent = new Date().getFullYear();
 
     const nav = document.getElementById('nav');
@@ -271,6 +204,9 @@ Je suis motivée, rigoureuse et toujours prête à apprendre de nouveaux outils 
       nav.classList.toggle('open');
       navToggle.classList.toggle('open');
     });
+
+    // Placeholder: sample data injection (optional)
+    // To visualize charts, include Chart.js and initialize canvases #chart-mau and #chart-rev.
   </script>
 </body>
 </html>

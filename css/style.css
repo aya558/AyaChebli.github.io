@@ -196,17 +196,43 @@ body {
   box-shadow: var(--shadow-neon);
 }
 
-/* ----- CONTACT ----- */
-#contact a {
-  color: var(--cyan);
-  text-decoration: none;
-  font-weight: 600;
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #0d0d0d;
+    border-top: 1px solid #222;
+    margin-top: 70px;
 }
 
-#contact a:hover {
-  color: var(--white);
-  text-shadow: var(--shadow-cyan);
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ff8c32;
 }
+
+.contact-section p {
+    color: #bbb;
+    margin-bottom: 25px;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 12px 25px;
+    background: #111;
+    border: 1px solid #ff8c32;
+    border-radius: 12px;
+    color: #ff8c32;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: .3s ease;
+}
+
+.contact-links a:hover {
+    background: #ff8c32;
+    color: #000;
+}
+
 
 /* ----- FOOTER ----- */
 .footer {

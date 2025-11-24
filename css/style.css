@@ -69,7 +69,7 @@ body {
       rgba(10, 10, 10, 0.80),
       rgba(10, 10, 10, 0.80)
     ),
-    url("/mnt/data/0d1346fe637831714d4a0a704c4c48a8.jpg") center/cover;
+    url("https://i.pinimg.com/1200x/49/58/49/495849bfab0a383efba899c2d168c497.jpg") center/cover;
   color: var(--white);
   border-bottom: 1px solid rgba(255, 120, 0, 0.2);
   box-shadow: 0 0 40px rgba(255, 120, 0, 0.15);

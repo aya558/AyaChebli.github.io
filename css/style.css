@@ -1,42 +1,53 @@
-/* ---- STYLE PROFESSIONNEL / CORPORATE ---- */
-/* Couleurs inspirées du style corporate : bleu profond, gris clair, élégance minimaliste */
+/* ---- THEME DARK FUTURISTE ORANGE NEON ---- */
 
 :root {
-  --primary: #0a2342; /* Bleu corporate sombre */
-  --secondary: #2a4b7c; /* Bleu plus clair */
-  --light: #f6f7f9; /* Gris très clair */
-  --text: #2a2a2a; /* Noir doux */
+  --bg: #0a0a0a;
+  --bg-alt: #181818;
+  --text: #e5e5e5;
   --white: #ffffff;
-  --radius: 8px;
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  /* ORANGE NEON MIX */
+  --orange: #ff7b00; 
+  --orange-soft: #d46a32;
+
+  /* CYAN LUMIERE */
+  --cyan: #00c8ff;
+
+  --radius: 10px;
+  --shadow-neon: 0 0 12px rgba(255, 120, 0, 0.6);
+  --shadow-cyan: 0 0 14px rgba(0, 200, 255, 0.6);
 }
 
 body {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
-  background: var(--light);
+  background: var(--bg);
   color: var(--text);
   line-height: 1.7;
 }
 
 /* ----- HEADER ----- */
 .header {
-  background: var(--white);
+  background: #101010;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: var(--shadow);
+  border-bottom: 1px solid rgba(255, 120, 0, 0.2);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.6);
   position: sticky;
   top: 0;
   z-index: 10;
 }
+
 .header h1 {
   margin: 0;
   font-size: 22px;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--orange);
+  text-shadow: var(--shadow-neon);
 }
+
 .header nav a {
   margin-left: 20px;
   text-decoration: none;
@@ -44,38 +55,52 @@ body {
   font-weight: 500;
   transition: 0.3s;
 }
+
 .header nav a:hover {
-  color: var(--primary);
+  color: var(--orange);
+  text-shadow: var(--shadow-neon);
 }
 
 /* ----- HERO ----- */
 .hero {
   text-align: center;
   padding: 120px 20px;
-  background: linear-gradient(rgba(10, 35, 66, 0.85), rgba(10, 35, 66, 0.85)), url("https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg") center/cover;
+  background: linear-gradient(
+      rgba(10, 10, 10, 0.8),
+      rgba(10, 10, 10, 0.8)
+    ),
+    url("https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg") center/cover;
   color: var(--white);
 }
+
 .hero h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--orange);
+  text-shadow: var(--shadow-neon);
 }
+
 .hero p {
   font-size: 18px;
   opacity: 0.9;
-  margin-bottom: 30px;
+  letter-spacing: 2px;
 }
+
 .hero .btn {
-  padding: 12px 24px;
-  background: var(--secondary);
+  padding: 12px 28px;
+  background: var(--orange);
   color: var(--white);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: var(--radius);
-  transition: 0.3s;
+  transition: 0.4s;
+  box-shadow: var(--shadow-neon);
 }
+
 .hero .btn:hover {
-  background: var(--primary);
+  background: var(--orange-soft);
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(255, 120, 0, 0.9);
 }
 
 /* ----- SECTIONS ----- */
@@ -84,13 +109,14 @@ body {
   margin: auto;
   padding: 80px 20px;
 }
+
 .section h2 {
-  font-size: 26px;
-  color: var(--primary);
-  border-left: 4px solid var(--primary);
+  font-size: 28px;
+  color: var(--orange);
+  border-left: 4px solid var(--orange);
   padding-left: 10px;
   font-weight: 700;
-  margin-bottom: 20px;
+  text-shadow: var(--shadow-neon);
 }
 
 /* ----- PROJECTS ----- */
@@ -101,38 +127,43 @@ body {
 }
 
 .project-card {
-  background: var(--white);
+  background: var(--bg-alt);
   padding: 25px;
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  transition: 0.3s;
-  border-top: 4px solid var(--primary);
+  border: 1px solid rgba(255, 120, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: 0.4s;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-neon);
+  border-color: var(--orange);
 }
 
 .project-card h3 {
   margin-top: 0;
   font-size: 20px;
-  color: var(--primary);
+  color: var(--orange);
+  text-shadow: var(--shadow-neon);
 }
 
 .project-card p {
   font-size: 14px;
+  color: #bbbbbb;
   margin: 10px 0 20px 0;
-  color: #444;
 }
 
 .project-link {
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--cyan);
   font-weight: 600;
+  transition: 0.3s;
 }
+
 .project-link:hover {
-  color: var(--primary);
+  color: var(--white);
+  text-shadow: var(--shadow-cyan);
 }
 
 /* ----- SKILLS ----- */
@@ -143,15 +174,25 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 12px;
 }
+
 .skills-list li {
-  background: var(--white);
+  background: var(--bg-alt);
   padding: 10px 15px;
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  font-size: 14px;
+  border: 1px solid rgba(255, 120, 0, 0.2);
+  font-size: 15px;
   font-weight: 500;
+  color: var(--white);
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
+  transition: 0.3s;
 }
 
+.skills-list li:hover {
+  border-color: var(--orange);
+  box-shadow: var(--shadow-neon);
+}
+
+/* ----- Contact ----- */
 .contact-section {
     padding: 60px 20px;
     text-align: center;
@@ -194,8 +235,10 @@ body {
 .footer {
   text-align: center;
   padding: 25px;
-  background: var(--primary);
-  color: var(--white);
+  background: #0f0f0f;
+  color: var(--orange);
   margin-top: 40px;
   font-size: 14px;
+  border-top: 1px solid rgba(255, 120, 0, 0.4);
+  text-shadow: var(--shadow-neon);
 }

@@ -66,10 +66,10 @@ body {
   text-align: center;
   padding: 120px 20px;
   background: linear-gradient(
-      rgba(10, 10, 10, 0.8),
-      rgba(10, 10, 10, 0.8)
+      rgba(10, 10, 10, 0.85),
+      rgba(10, 10, 10, 0.85)
     ),
-    url("https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg") center/cover;
+    url("https://images.pexels.com/photos/11813129/pexels-photo-11813129.jpeg") center/cover;
   color: var(--white);
 }
 
@@ -102,6 +102,7 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 0 20px rgba(255, 120, 0, 0.9);
 }
+
 
 /* ----- SECTIONS ----- */
 .section {

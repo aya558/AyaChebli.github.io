@@ -242,3 +242,13 @@ body {
   border-top: 1px solid rgba(255, 120, 0, 0.4);
   text-shadow: var(--shadow-neon);
 }
+
+
+.project-card img {
+  width: 100%;
+  max-width: 350px; /* tu peux changer à 300, 280, 250, selon ton goût */
+  border-radius: 8px;
+  margin: 10px 0;
+  display: block;
+}
+

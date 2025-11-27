@@ -246,7 +246,7 @@ body {
 
 .project-card img {
   width: 100%;
-  max-width: 300px; /* tu peux changer à 300, 280, 250, selon ton goût */
+  max-width: 280px; /* tu peux changer à 300, 280, 250, selon ton goût */
   border-radius: 8px;
   margin: 10px 0;
   display: block;
